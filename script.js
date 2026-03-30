@@ -11,3 +11,13 @@ window.addEventListener('scroll', function() {
         header.style.background = '#2d5a27';
     }
 });
+document.getElementById('form-contato').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede a página de recarregar
+    
+    const nome = document.getElementById('nome').value;
+    
+    // Simulação de envio
+    alert(`Olá ${nome}! Sua mensagem foi enviada com sucesso. Nossa equipe de sustentabilidade entrará em contato.`);
+    
+    this.reset(); // Limpa o formulário
+});
