@@ -21,3 +21,12 @@ document.getElementById('form-contato').addEventListener('submit', function(even
     
     this.reset(); // Limpa o formulário
 });
+// Seleciona todos os cards de pilares
+const cards = document.querySelectorAll('.card-pilar');
+
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        const pilarNome = card.querySelector('h3').innerText;
+        alert(`Você selecionou o pilar: ${pilarNome}. Estamos trabalhando para aplicar o melhor de ${pilarNome.toLowerCase()} no agronegócio moderno!`);
+    });
+});
