@@ -1,1 +1,91 @@
+:root {
+    --verde-escuro: #1b3d18;
+    --verde-claro: #a8e063;
+    --branco: #ffffff;
+    --cinza-fundo: #f4f7f1;
+}
 
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+html { scroll-behavior: smooth; }
+
+body { background-color: var(--cinza-fundo); color: #333; line-height: 1.6; }
+
+/* Navegação */
+header {
+    background: var(--verde-escuro);
+    color: white;
+    padding: 20px 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    transition: 0.4s;
+}
+
+nav { display: flex; justify-content: space-between; align-items: center; }
+
+.logo { font-size: 1.5rem; font-weight: bold; }
+.logo span { color: var(--verde-claro); }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
+nav ul li a:hover { color: var(--verde-claro); }
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 { font-size: 3.5rem; margin-bottom: 20px; }
+
+.btn-principal {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--verde-claro);
+    color: var(--verde-escuro);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-principal:hover { transform: scale(1.05); background: #96d152; }
+
+/* Pilares */
+#pilares { padding: 100px 5%; }
+.secao-titulo { text-align: center; font-size: 2.5rem; color: var(--verde-escuro); margin-bottom: 50px; }
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: 0.4s;
+}
+
+.card:hover { transform: translateY(-10px); border-bottom: 4px solid var(--verde-claro); }
+
+.card .icon { font-size: 3rem; margin-bottom: 20px; display: block; }
+
+.card h3 { color: var(--verde-escuro); margin-bottom: 15px; }
+
+footer { background: var(--verde-escuro); color: white; text-align: center; padding: 40px; }
