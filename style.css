@@ -145,3 +145,67 @@ footer {
     padding: 20px;
     text-align: center;
 }
+#pilares {
+    padding: 60px 20px;
+    background-color: #f9fbf9;
+    text-align: center;
+}
+
+.titulo-secao {
+    font-size: 2.5rem;
+    color: #2d5a27;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Faz os cards quebrarem de linha no celular */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-pilar {
+    background: #ffffff;
+    border-bottom: 5px solid #a8e063;
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card-pilar:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(45, 90, 39, 0.2);
+    background-color: #f0fff0;
+}
+
+.card-pilar .icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.card-pilar h3 {
+    color: #1b3d18;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.card-pilar p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .card-pilar {
+        width: 100%;
+    }
+}
