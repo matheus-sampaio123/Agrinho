@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <nav>
             <div class="logo">Agro<span>Forte</span></div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sustentabilidade</a></li>
+                <li><a href="#pilares">Pilares</a></li>
+                <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -21,75 +23,56 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Equilíbrio entre Produção e Meio Ambiente</h1>
-            <p>Inovação tecnológica a serviço da terra e das gerações futuras.</p>
-            <button onclick="mostrarMensagem()">Saiba Mais</button>
+            <p>O futuro do agronegócio é verde, tecnológico e eficiente.</p>
+            <a href="#pilares" class="btn">Conhecer Projetos</a>
         </div>
     </section>
 
-    <section id="sobre">
-        <h2>Pilares do Futuro</h2>
-        <div class="cards">
-            <div class="card">
+    <section id="pilares">
+        <h2 class="titulo-secao">Pilares do Futuro</h2>
+        <div class="cards-container">
+            <div class="card-pilar">
+                <div class="icon">💧</div>
                 <h3>Preservação</h3>
                 <p>Uso consciente de recursos hídricos e recuperação de solos.</p>
             </div>
-            <div class="card">
+            <div class="card-pilar">
+                <div class="icon">🛰️</div>
                 <h3>Tecnologia</h3>
-                <p>Drones e IA para monitoramento de precisão.</p>
+                <p>Drones e IA para monitoramento de precisão no campo.</p>
             </div>
-            <div class="card">
+            <div class="card-pilar">
+                <div class="icon">🌱</div>
                 <h3>Eficiência</h3>
-                <p>Produzir mais em menos espaço, reduzindo impactos.</p>
+                <p>Produzir mais em menos espaço, reduzindo impactos ambientais.</p>
             </div>
         </div>
     </section>
 
-   <section id="galeria">
-    <h2>Nossa Atuação</h2>
-    <div class="grid-galeria">
-        <div class="foto-item"><img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=500&q=60" alt="Plantação"></div>
-        <div class="foto-item"><img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=500&q=60" alt="Tecnologia no Campo"></div>
-        <div class="foto-item"><img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=500&q=60" alt="Colheita"></div>
-        <div class="foto-item"><img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=500&q=60" alt="Sustentabilidade"></div>
-    </div>
-</section>
+    <section id="galeria">
+        <h2 class="titulo-secao">Nossa Atuação</h2>
+        <div class="grid-galeria">
+            <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=400" alt="Agro 1">
+            <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=400" alt="Agro 2">
+            <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=400" alt="Agro 3">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=400" alt="Agro 4">
+        </div>
+    </section>
 
-<section id="contato">
-    <h2>Fale Conosco</h2>
-    <form id="form-contato">
-        <input type="text" id="nome" placeholder="Seu Nome" required>
-        <input type="email" id="email" placeholder="Seu E-mail" required>
-        <textarea id="mensagem" placeholder="Como podemos ajudar no seu projeto sustentável?" rows="5" required></textarea>
-        <button type="submit">Enviar Mensagem</button>
-    </form>
-</section>
+    <section id="contato">
+        <h2 class="titulo-secao">Fale Conosco</h2>
+        <form id="form-contato" class="form-container">
+            <input type="text" id="nome" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+            <textarea id="mensagem" placeholder="Sua mensagem..." rows="4" required></textarea>
+            <button type="submit" class="btn">Enviar Agora</button>
+        </form>
+    </section>
 
-<footer>
-    <p>&copy; 2024 Agro Forte - Futuro Sustentável</p>
-</footer> <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2026 Agro Forte - Sustentabilidade e Tecnologia</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-<section id="pilares">
-    <div class="container">
-        <h2 class="titulo-secao">Pilares do Futuro</h2>
-        <div class="cards-container">
-            <div class="card-pilar" data-pilar="preservacao">
-                <div class="icon">💧</div>
-                <h3>Preservação</h3>
-                <p>Uso consciente de recursos hídricos e recuperação de solos para manter o ecossistema saudável.</p>
-            </div>
-
-            <div class="card-pilar" data-pilar="tecnologia">
-                <div class="icon">🛰️</div>
-                <h3>Tecnologia</h3>
-                <p>Utilização de Drones e IA para monitoramento de precisão e tomada de decisões inteligentes.</p>
-            </div>
-
-            <div class="card-pilar" data-pilar="eficiencia">
-                <div class="icon">🌱</div>
-                <h3>Eficiência</h3>
-                <p>Produzir mais em menos espaço, reduzindo impactos ambientais e otimizando a colheita.</p>
-            </div>
-        </div>
-    </div>
-</section>
