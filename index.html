@@ -1,103 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do Rural ao Urbano: Sinfonia de Sabores e Saberes</title>
+    <title>Agro Forte | Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Do Rural ao Urbano: Uma Sinfonia de Sabores e Saberes</h1>
         <nav>
+            <div class="logo">Agro<span>Forte</span></div>
             <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#sabores">Sabores do Campo</a></li>
-                <li><a href="#saberes">Saberes da Cidade</a></li>
-                <li><a href="#conexao">A Nossa Conexão</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sustentabilidade</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h2>Celebrando a União entre o Campo e a Cidade</h2>
-                <p>Descubra a rica troca de sabores e conhecimentos que enriquecem nossa sociedade.</p>
-                <a href="#conexao" class="button">Explore a Conexão</a>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Equilíbrio entre Produção e Meio Ambiente</h1>
+            <p>Inovação tecnológica a serviço da terra e das gerações futuras.</p>
+            <button onclick="mostrarMensagem()">Saiba Mais</button>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Pilares do Futuro</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Preservação</h3>
+                <p>Uso consciente de recursos hídricos e recuperação de solos.</p>
             </div>
-        </section>
-
-        <section id="sabores" class="destaque">
-            <h2>Sabores que Vêm da Terra</h2>
-            <div class="grid-container">
-                <div class="item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1HkdOSQFrtqwzPpAJP_wYLubncAWkRvy0yA&s" alt="Produto 1">
-                    <h3>Produto Fresco 1</h3>
-                    <p>Descrição breve do produto do campo.</p>
-                </div>
-                <div class="item">
-                    <img src="https://saude.abril.com.br/wp-content/uploads/2024/06/504-materia-chocolate-quadro-do-que-e-feito.jpg?quality=50&strip=info" alt="Produto 2">
-                    <h3>Produto Fresco 2</h3>
-                    <p>Descrição breve do produto do campo.</p>
-                </div>
-                <div class="item">
-                    <img src="https://s0.smartresize.com/wallpaper/224/277/HD-wallpaper-variety-of-fruits-fruits-melon-basket-vegetables.jpg" alt="Produto 3">
-                    <h3>Produto Fresco 3</h3>
-                    <p>Descrição breve do produto do campo.</p>
-                </div>
+            <div class="card">
+                <h3>Tecnologia</h3>
+                <p>Drones e IA para monitoramento de precisão.</p>
             </div>
-        </section>
-
-        <section id="saberes" class="destaque">
-            <h2>Saberes que Impulsionam a Inovação</h2>
-            <div class="grid-container">
-                <div class="item">
-                    <h3>Espaço Urbano</h3>
-                    <p></p>
-                </div>
-                <div class="item">
-                    <h3>Meio rural</h3>
-                    <p>A presente pesquisa propõe uma reflexão crítica sobre artefatos que surgem da confluência do design com o artesanato à luz do conceito de hibridismo cultural. Busca compreender o convívio em artefatos contemporâneos de aspectos materiais e simbólicos da sociedade urbano-industrial e de culturas tradicionais, assim como os modos de produção artesanal. Esta investigação busca refletir sobre a adequação do conceito de hibridismo cultural e o adjetivo híbrido, provenientes dos estudos culturais, para descrever, qualificar ou caracterizar artefatos elaborados a partir do encontro do design com o artesanato. Para realizar tal reflexão, esta pesquisa se dá sob a ótica das concepções de hibridismo cultural de Peter Burke e Néstor García Canclini e busca conhecer o fenômeno no contexto da contemporaneidade. Busca também compreender os múltiplos aspectos e a abrangência das atividades design e artesanato no âmbito da cultura material, assim como, investigar o reconhecimento dos artefatos híbridos no Brasil e verificar a possibilidade de analisar os artefatos a partir dos processos de hibridização cultural.
-</p>
-                </div>
-                <div class="item">
-                    <h3>A integração do urbano e rural</h3>
-                    <p>Novas formas de utilizar os ingredientes do campo na cidade.</p>
-                </div>
+            <div class="card">
+                <h3>Eficiência</h3>
+                <p>Produzir mais em menos espaço, reduzindo impactos.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="conexao">
-            <h2>A Força da Nossa Conexão</h2>
-            <div class="conteudo-conexao">
-                <p>Aqui exploraremos como a colaboração entre o campo e a cidade gera benefícios mútuos, promovendo o desenvolvimento sustentável e a valorização da nossa cultura.</p>
-                <button class="botao-interativo">Compartilhe sua Experiência</button>
-                <label for="mensagem">Sua mensagem:</label>
-                <textarea id="mensagem" rows="5"></textarea>
-                <select>
-                    <option value="campo">Sou do Campo</option>
-                    <option value="cidade">Sou da Cidade</option>
-                    <option value="ambos">Tenho Conexão com Ambos</option>
-                </select>
-            </div>
-        </section>
-
-        <section id="contato">
-            <h2>Entre em Contato</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit" class="button">Enviar Mensagem</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Agrinho - Do Rural ao Urbano</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
