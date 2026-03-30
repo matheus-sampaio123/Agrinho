@@ -1,32 +1,19 @@
-function mostrarMensagem() {
-    alert("Obrigado pelo interesse! Estamos construindo um agro mais forte e verde juntos.");
-}
+// Logica do Formulario
+document.getElementById('form-contato').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nome = document.getElementById('nome').value;
+    alert(`Obrigado, ${nome}! Recebemos sua mensagem sobre o futuro sustentável.`);
+    this.reset();
+});
 
-// Efeito de mudar a cor do header ao rolar a página
-window.addEventListener('scroll', function() {
+// Mudança de cor no Header ao rolar
+window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
-        header.style.background = '#1b3d18';
+        header.style.background = '#0a1a08';
+        header.style.padding = '10px 5%';
     } else {
-        header.style.background = '#2d5a27';
+        header.style.background = '#1b3d18';
+        header.style.padding = '20px 5%';
     }
-});
-document.getElementById('form-contato').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede a página de recarregar
-    
-    const nome = document.getElementById('nome').value;
-    
-    // Simulação de envio
-    alert(`Olá ${nome}! Sua mensagem foi enviada com sucesso. Nossa equipe de sustentabilidade entrará em contato.`);
-    
-    this.reset(); // Limpa o formulário
-});
-// Seleciona todos os cards de pilares
-const cards = document.querySelectorAll('.card-pilar');
-
-cards.forEach(card => {
-    card.addEventListener('click', () => {
-        const pilarNome = card.querySelector('h3').innerText;
-        alert(`Você selecionou o pilar: ${pilarNome}. Estamos trabalhando para aplicar o melhor de ${pilarNome.toLowerCase()} no agronegócio moderno!`);
-    });
 });
