@@ -1,1 +1,61 @@
+:root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --primary: #2e7d32;
+    --card: #f0f0f0;
+}
 
+.dark-mode {
+    --bg: #121212;
+    --text: #ffffff;
+    --primary: #4caf50;
+    --card: #1e1e1e;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--primary);
+    padding: 15px;
+    color: white;
+}
+
+.logo { height: 40px; }
+
+nav button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.container { padding: 40px 10%; }
+
+/* Sistema de Páginas */
+.pagina { display: none; animation: fadeIn 0.5s; }
+.pagina.active { display: block; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Galeria */
+#imagem-destaque { width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; }
+.thumbs img { width: 100px; height: 70px; cursor: pointer; margin-top: 10px; border-radius: 5px; }
+
+/* Vídeos e Cards */
+#player-container { margin-top: 20px; background: #000; }
+.card { background: var(--card); padding: 30px; border-radius: 15px; text-align: center; }
+.hidden { display: none; }
+
+button:hover { transform: scale(1.05); filter: brightness(1.1); }
