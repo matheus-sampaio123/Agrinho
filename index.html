@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Agrinho 2026 | Inovação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <div class="header-content">
+            <img src="assets/logo.png" alt="Logo Agrinho" class="logo">
+            <nav>
+                <button onclick="navegar('home')">Início</button>
+                <button onclick="navegar('videos')">Vídeos</button>
+                <button onclick="navegar('calculadora')">Simulador</button>
+            </nav>
+            <button id="btn-dark">🌓</button>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="home" class="pagina active">
+            <h2>Bem-vindo ao Campo Digital</h2>
+            <div class="galeria-container">
+                <img id="imagem-destaque" src="assets/campo.jpg" alt="Campo">
+                <p id="legenda">Explorando a agricultura sustentável.</p>
+                <div class="thumbs">
+                    <img src="assets/campo.jpg" onclick="trocarImagem('assets/campo.jpg', 'Explorando a agricultura sustentável.')">
+                    <img src="assets/tecnologia.jpg" onclick="trocarImagem('assets/tecnologia.jpg', 'Drones e sensores monitorando a colheita.')">
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="pagina">
+            <h2>Aprenda mais sobre o tema</h2>
+            <div class="video-grid">
+                <button onclick="carregarVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">Assista: O Futuro do Agro</button>
+                <button onclick="carregarVideo('https://www.youtube.com/embed/ScMzIvxBSi4')">Assista: Tecnologia Agrinho</button>
+            </div>
+            <div id="player-container">
+                <iframe id="video-player" width="100%" height="400" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="calculadora" class="pagina">
+            <h2>Simulador de Sustentabilidade</h2>
+            <div class="card">
+                <label>Área plantada (Hectares):</label>
+                <input type="number" id="valor-input" placeholder="Ex: 10">
+                <button id="btn-rodar">Simular Resultado</button>
+                <div id="resultado" class="hidden">
+                    <p id="texto-res"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Concurso Agrinho | Desenvolvido com HTML, CSS e JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
