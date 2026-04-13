@@ -1,29 +1,16 @@
-// Alterar estilo do header ao rolar a página
-window.addEventListener('scroll', () => {
-    const header = document.getElementById('header');
-    if (window.scrollY > 50) {
-        header.style.background = '#0d210a';
-        header.style.padding = '10px 5%';
-    } else {
-        header.style.background = '#1b3d18';
-        header.style.padding = '20px 5%';
-    }
+// 1. Captura de elementos do DOM
+const btnTema = document.getElementById('btn-tema');
+const btnSaudar = document.getElementById('btn-saudar');
+const inputNome = document.getElementById('input-nome');
+const msgBoasVindas = document.getElementById('mensagem-boas-vendas');
+
+// 2. Função para o Modo Escuro (Melhoria para o usuário - Nível 4)
+btnTema.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
 });
 
-// Animação simples de entrada (Fade-in ao rolar)
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-        }
-    });
-}, { threshold: 0.1 });
+// 3. Função para processar informações e atualizar a tela (Requisito Técnico - Nível 4)
+btnSaudar.addEventListener('click', () => {
+    const nomeUsuario = inputNome.value; // Armazenando em variável
 
-document.querySelectorAll('[data-anima="scroll"]').forEach(el => {
-    el.style.opacity = "0";
-    el.style.transform = "translateY(30px)";
-    el.style.transition = "all 0.8s ease-out";
-    observer.observe(el);
-});
-
+    if (nomeUsuario.trim() !== "") {
