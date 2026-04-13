@@ -1,43 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bem-vindo ao Agrinho</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho: Sustentabilidade no Campo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="assets/images/logo.png" alt="Logo Agrinho">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Projeto Agrinho 2026</h1>
+        <nav>
+            <button id="theme-toggle">Alternar Modo Escuro</button>
+        </nav>
+    </header>
 
-  <main>
-    <section id="bemvindo">
-      <h1>Bem-vindo ao Agrinho!</h1>
-      <p>Informe seu nome para uma saudação personalizada:</p>
-      <input type="text" id="nome" placeholder="Seu nome">
-      <button id="saudarBtn">Saudar</button>
-      <p id="saudacao"></p>
-    </section>
-    <section id="sobre">
-      <h2>Sobre o Projeto</h2>
-      <p>O Agrinho é um projeto que promove educação agrícola para crianças.</p>
-    </section>
-  </main>
+    <main>
+        <section id="hero">
+            <h2>Tecnologia a favor do Agricultor</h2>
+            <p>O uso consciente de recursos garante o futuro da nossa terra.</p>
+        </section>
 
-  <footer>
-    <p>&copy; 2026 Agrinho - Todos os direitos reservados.</p>
-    <button id="modoEscuroBtn">Ativar Modo Escuro</button>
-  </footer>
+        <section id="interativo">
+            <h3>Calculadora de Economia de Água</h3>
+            <div class="form-group">
+                <label for="litros">Litros economizados por dia:</label>
+                <input type="number" id="litros" placeholder="Ex: 50">
+                <button onclick="calcularEconomia()">Calcular Semanal</button>
+            </div>
+            <p id="resultado">Insira um valor para ver o impacto!</p>
+        </section>
+    </main>
 
-  <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2026 - Desenvolvido para o Concurso Agrinho</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
